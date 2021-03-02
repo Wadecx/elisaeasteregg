@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Question 5</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+      <h2>Question n°5</h2>
+        <ul>
+            <li><a href="q1.html"><i class="fas fa-pen"></i>Q1</a></li>
+            <li><a href="q2.html"><i class="fas fa-pen"></i>Q2</a></li>
+            <li><a href="q3.html"><i class="fas fa-pen"></i>Q3</a></li>
+            <li><a href="q4.html"><i class="fas fa-pen"></i>Q4</a></li>
+            <li><a href="q5.html"><i class="fas fa-pen"></i>Q5</a></li>
+        </ul> 
+        <div class="social_media">
+          <a href="https://www.instagram.com/tyrxxn.mrl/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="main_content"> 
+        <div class="info">
+          <div>Dernière Question !</div>
+          <div>Quel est la discipline sportive qe je pratique le plus ?(Sans Majuscule)</div>
+          <input type="text" id="sport" placeholder="Quel sport ? ">
+          <input type="submit" value="Valider" onClick="clicked()"> 
+      </div>
+    </div>
+</div>
+
+</body>
+<script>
+  function clicked()
+{
+  var manga = document.getElementById('sport');
+  
+  var mangacheck = "parkour";
+
+  if (manga.value == mangacheck)
+    window.open("text.html");
+  else 
+  {
+    window.alert("pas du tout");
+  }
+}
+</script>
+</html>
